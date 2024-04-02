@@ -1,0 +1,89 @@
+/* Variáveis CSS para cores e tamanhos */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --text-color: #333;
+    --light-background: #f8f9fa;
+    --font-size-base: 16px;
+    --spacing-base: 20px;
+    --border-radius-base: 4px;
+}
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light-background);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: var(--spacing-base);
+    padding: var(--spacing-base);
+    box-sizing: border-box;
+    position: relative; /* Adiciona posição relativa para que o botão seja posicionado com base nesse contêiner */
+}
+
+#nextButton, #prevButton {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 50%; /* Mantém os botões circulares */
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px; /* Move os botões para mais perto da parte inferior do contêiner */
+    transform: translateX(-50%); /* Ajusta o posicionamento horizontal */
+}
+
+#nextButton {
+    right: 20px; /* Posiciona o botão 'Próximo' no canto inferior direito */
+}
+
+#prevButton {
+    left: 20px; /* Posiciona o botão 'Anterior' no canto inferior esquerdo */
+}
+
+#nextButton:hover, #prevButton:hover {
+    background-color: var(--secondary-color);
+}
+
+
+h1, h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: var(--spacing-base);
+}
+
+h2 {
+    background-color: #eee; /* Slight background color for differentiation */
+    padding: 10px;
+    border-radius: var(--border-radius-base);
+    color: var(--secondary-color);
+    margin-top: var(--spacing-base);
+}
+
+p {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-size: var(--font-size-base);
+}
+
+/* Estilização anterior permanece a mesma */
+.card {
+    display: none; /* Ocultar todos os cartões por padrão */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: var(--spacing-base);
+}
