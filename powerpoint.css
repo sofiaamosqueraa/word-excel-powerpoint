@@ -23,46 +23,36 @@ body {
     line-height: 1.6;
 }
 
-
-
-.arrow-link {
-    margin-top: 32px;
-    font-size: 150px; 
-    color: var(--primary-color); /* alterado para corresponder à cor primária definida */
-    text-decoration: none;
-    position: absolute; /* posição absoluta para permitir o posicionamento personalizado */
-    left: calc(100% + 20px); /* 20px de margem à direita do contêiner */
-    transform: translateY(-50%); /* centralizar verticalmente */
-    transform: scale(2);
-}
-
-
-.ggr-arrow-right {
-   font-size: 200px;
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(2);
-}
-
-
 .arrow-left {
-    margin-top: 32px;
-    font-size: 150px; 
-    color: var(--primary-color); /* alterado para corresponder à cor primária definida */
+    margin-top: 5%; /* Use uma margem superior relativa */
+    font-size: 8vw; /* Use uma unidade de largura de viewport (vw) para o tamanho da fonte */
+    color: var(--primary-color);
     text-decoration: none;
-    position: absolute; /* posição absoluta para permitir o posicionamento personalizado */
-    right: calc(100% + 20px); /* 20px de margem à direita do contêiner */
-    transform: translateY(-50%); /* centralizar verticalmente */
+    position: absolute;
+    right: calc(100% + 20px); /* Use uma margem direita relativa com um valor fixo adicional */
+    transform: translateY(-50%);
     transform: scale(2);
 }
 
 .gg-arrow-left {
-   font-size: 200px;
+    font-size: 10vw; /* Tamanho da fonte relativo à largura da viewport */
     box-sizing: border-box;
     position: relative;
     display: block;
     transform: scale(2);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .arrow-left {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        right: calc(70%); /* Use uma margem direita relativa com um valor fixo adicional */
+        font-size: 12vw; /* Ajuste o tamanho da fonte para telas menores */
+    }
+    .gg-arrow-left {
+        font-size: 14vw; /* Ajuste o tamanho da fonte para telas menores */
+    }
 }
 
 
@@ -133,6 +123,7 @@ body {
 }
 
 h1, h2 {
+    margin-top: 32px;
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 5px;
