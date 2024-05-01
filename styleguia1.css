@@ -1,0 +1,46 @@
+body {
+    background-color: #a7c7e7; /* Color de fondo azul pastel */
+    font-family: Arial, sans-serif; /* Tipografía más moderna y legible */
+    color: #333333; /* Color de texto más oscuro para contraste */
+}
+
+h1, h2, h3 {
+    color: #205493; /* Color azul oscuro para los títulos */
+}
+
+.container {
+    width: 80%; /* Reducir el ancho para centrar el contenido */
+    margin: 20px auto; /* Margen auto para centrar y agregar espacio vertical */
+    background-color: #ffffff; /* Fondo blanco para los contenedores */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para profundidad */
+    padding: 20px; /* Espacio interno para no pegar el texto a los bordes */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.text {
+    width: 100%; /* Aprovechar todo el ancho para el texto */
+    padding: 20px;
+}
+
+ol {
+    padding-left: 20px; /* Espacio para alinear la lista */
+    list-style: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.first-image {
+    display: block; /* Asegurar que la imagen esté en su propia línea */
+    margin: 10px auto; /* Centrar la imagen horizontalmente y agregar margen */
+    width: 500px; /* Aumentar el ancho de la primera imagen */
+    height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+}
+
+img {
+    display: block; /* Asegurar que la imagen esté en su propia línea */
+    margin: 10px auto; /* Centrar la imagen horizontalmente y agregar margen */
+    max-width: 100%; /* Asegurar que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+}
