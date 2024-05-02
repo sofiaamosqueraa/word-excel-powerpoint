@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #0056b3;
+    --primary-color: #f89d00;
+    --secondary-color: #b09500;
     --black-color: #0000;
     --text-color: #333;
     --light-background: #f8f9fa;
@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: #90cbe9;
+    background-color: #f5dd72;
     /* Tom de cinza azulado para fundo */
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     /* Fonte mais moderna e legível */
@@ -30,7 +30,7 @@ body {
 h1,
 h2,
 h3 {
-    color: #205493;
+    color: var(--primary-color);
     /* Azul escuro para títulos */
     font-weight: bold;
     /* Títulos em negrito para destaque */

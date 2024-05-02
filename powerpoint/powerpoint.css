@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #228B22;
-    --secondary-color: #006400;
+    --primary-color: #f89d00;
+    --secondary-color: #b09500;
     --black-color: #0000;
     --text-color: #333;
     --light-background: #f8f9fa;
@@ -23,47 +23,25 @@ body {
     line-height: 1.6;
 }
 
-
-
-.arrow-link {
-    margin-top: 32px;
-    font-size: 150px; 
-    color: var(--primary-color); /* alterado para corresponder à cor primária definida */
-    text-decoration: none;
-    position: absolute; /* posição absoluta para permitir o posicionamento personalizado */
-    left: calc(100% + 20px); /* 20px de margem à direita do contêiner */
-    transform: translateY(-50%); /* centralizar verticalmente */
-    transform: scale(2);
-}
-
-
-.ggr-arrow-right {
-   font-size: 200px;
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(2);
-}
-
-
 .arrow-left {
-    margin-top: 32px;
-    font-size: 150px; 
-    color: var(--primary-color); /* alterado para corresponder à cor primária definida */
+    margin-top: 5%; /* Use uma margem superior relativa */
+    font-size: 8vw; /* Use uma unidade de largura de viewport (vw) para o tamanho da fonte */
+    color: var(--primary-color);
     text-decoration: none;
-    position: absolute; /* posição absoluta para permitir o posicionamento personalizado */
-    right: calc(100% + 20px); /* 20px de margem à direita do contêiner */
-    transform: translateY(-50%); /* centralizar verticalmente */
+    position: absolute;
+    right: calc(100% + 20px); /* Use uma margem direita relativa com um valor fixo adicional */
+    transform: translateY(-50%);
     transform: scale(2);
 }
 
 .gg-arrow-left {
-   font-size: 200px;
+    font-size: 10vw; /* Tamanho da fonte relativo à largura da viewport */
     box-sizing: border-box;
     position: relative;
     display: block;
     transform: scale(2);
 }
+
 
 @media only screen and (max-width: 768px) {
     .arrow-left {
@@ -77,21 +55,8 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .arrow-link {
-        margin-top: 5px;
-        margin-bottom: 10px;
-        left: calc(70%); /* Use uma margem direita relativa com um valor fixo adicional */
-        font-size: 12vw; /* Ajuste o tamanho da fonte para telas menores */
-    }
-    .gg-arrow-right {
-        font-size: 14vw; /* Ajuste o tamanho da fonte para telas menores */
-    }
-}
-
 
 .container {
-    margin-top: 10px;
     max-width: 800px;
     margin: var(--spacing-base) auto; /* centralize o contêiner horizontalmente e ajuste as margens conforme necessário */
     padding: var(--spacing-base);
@@ -191,3 +156,38 @@ p {
 .card:first-child {
     display: block; 
 }
+
+
+.links-container {
+    text-align: center; /* Centraliza os elementos dentro da div */
+}
+
+/* Estilo para links dentro de elementos com classe "Guia" */
+.Guia a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Estilo de hover para links dentro de elementos com classe "Guia" */
+.Guia a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Estilo para o link com id "circle-link" */
+#circle-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 2px;
+}
+
+/* Estilo de hover para o link com id "circle-link" */
+#circle-link:hover {
+    color:var(--primary-color);
+}
+

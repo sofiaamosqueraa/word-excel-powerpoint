@@ -45,6 +45,55 @@ body {
     transform: scale(2);
 }
 
+/* Estilos para a div que contém os links */
+.links-container {
+    text-align: center; /* Centraliza os elementos dentro da div */
+}
+
+/* Estilo para links dentro de elementos com classe "Guia" */
+.Guia a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Estilo de hover para links dentro de elementos com classe "Guia" */
+.Guia a:hover {
+    color: #007bff;
+}
+
+/* Estilo para o link com id "circle-link" */
+#circle-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 2px;
+}
+
+/* Estilo de hover para o link com id "circle-link" */
+#circle-link:hover {
+    color: #007bff;
+}
+
+
+/* Estilo para as imagens dentro das cartas */
+.card img {
+    display: block; /* Garante que a imagem fique em seu próprio bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+/* Estilo de hover para as imagens */
+.card img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a escala da imagem ao passar o mouse */
+}
 
 
 
